@@ -9,4 +9,8 @@
 /composer.phar
 /vendor/
 /web/bundles/
+<<<<<<< Updated upstream
 /nbproject
+=======
+/nbproject/private/
+>>>>>>> Stashed changes

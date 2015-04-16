@@ -1,14 +1,55 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<div class="header">
-    Welcome to SymfonyTn.
-</div>
 
-<div class="content">
-    Page Content.
+    
+   <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="color: rebeccapurple;" href="#">Welcome to SymfonyTn</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <div class="jumbotron">
+    <h1 style="font-size:27px;color:red">The biggest Symfony event all over Arfica!</h1>      
+    <p>The leading PHP framework to create websites and web applications. Built on top of the Symfony Components.</p>      
+    <p style="font-weight:bold;">Platinium Sponsors:</p>
+    <div style="text-align:center">
+        <img src="{{ asset('img/ayaline.png') }}" alt="Smiley face" height="100" width="150">
+        <img src="{{ asset('img/petit_tunisie-2.png') }}" alt="Smiley face" height="100" width="150">
+        <img src="{{ asset('img/oxia.png') }}" alt="Smiley face" height="100" width="150">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <p>A huge community of Symfony fans committed to take PHP to the next level.</p>
+    </div>
+    <div class="col-md-3"> 
+      <p>A set of decoupled and reusable components on which the best PHP applications are built on, such as Drupal, phpBB and eZ Publish.</p>
+    </div>
+    <div class="col-md-3"> 
+      <p>Embracing and promoting professionalism, best practices, standardization and interoperability of applications.</p>
+    </div>
+    <div class="col-md-3">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+    </div>
+    <div class="clearfix visible-lg"></div>
+  </div>
+    <div style="text-align:center">
+        <img src="{{ asset('img/community.jpg') }}" alt="Smiley face" height="500" width="1000">
+    </div>
+    
 </div>
-<div class="footer">
-    Page Footer
-</div>
+ 
 {% endblock %}
